@@ -1,0 +1,94 @@
+/* global styles */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins',sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+/* standardized fon format */
+/* html{
+    font-size: 62.5%;
+}
+h1 {
+    font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3{
+    font-size: 4.8rem;
+}
+h4,h5{
+    font-size: 2.8rem;
+} */
+
+
+
+/* header navigation */
+.headerNavigation{
+    background-color: #121c12;
+    color: white;
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    min-width: 90vw
+}
+nav  ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Logo{
+    flex: 1 1 40rem;
+    font-family: 'Pattaya';
+}
+
+
+/* Top picture with waterfall */
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,.4), transparent),url('/img/landing-page.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+}
+.hero h3, h2, button{
+    margin: 1rem;
+}
+.hero button{
+   padding: 1rem;
+   background-color: transparent; 
+   border-radius: 12px;
+   border: none;
+   font-weight: 500;
+   color: rgb(185, 105, 0);
+   outline: none; 
+   border: 2px solid rgb(185, 105, 0);
+}
