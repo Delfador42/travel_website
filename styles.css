@@ -92,3 +92,12 @@ nav  ul{
    outline: none; 
    border: 2px solid rgb(185, 105, 0);
 }
+
+@media screen and (max-width: 375px){
+    .headerNavigation nav{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: .5rem 0rem;
+    }
+}
