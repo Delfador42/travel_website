@@ -15,7 +15,7 @@ a{
     color: lightgray;
 }
 
-/* standardized fon format */
+/* standardized font format */
 /* html{
     font-size: 62.5%;
 }
@@ -50,11 +50,11 @@ h4,h5{
     align-items: center;
     justify-content: center;
 }
-nav{
+.headerNavigation nav{
     display: flex;
     min-width: 90vw
 }
-nav  ul{
+.headerNavigation nav  ul{
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-between;
@@ -66,6 +66,15 @@ nav  ul{
     font-family: 'Pattaya';
 }
 
+/* This is Nav the format for iPhone size */
+@media screen and (max-width: 375px){
+    .headerNavigation nav{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: .5rem 0rem;
+    }
+}
 
 /* Top picture with waterfall */
 .hero{
@@ -79,9 +88,10 @@ nav  ul{
     justify-content: center;
     color: lightgray;
 }
-.hero h3, h2, button{
+.hero h2{
     margin: 1rem;
 }
+
 .hero button{
    padding: 1rem;
    background-color: transparent; 
@@ -91,13 +101,85 @@ nav  ul{
    color: rgb(185, 105, 0);
    outline: none; 
    border: 2px solid rgb(185, 105, 0);
+   margin: 2rem;
 }
 
-@media screen and (max-width: 375px){
-    .headerNavigation nav{
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        padding: .5rem 0rem;
+
+/* Benefits Section */
+#locations{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),transparent), url('/img/new-york-page.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head{
+    width: 90vw;
+    margin: auto;
+}
+
+.locations-head h2{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    pointer-events: none;
+}
+.moving-cloud1{
+    animation: cloudAnimation 15s infinite alternate ease-in-out;
+}
+.moving-cloud2{
+    top:10%;
+    z-index: -1;
+    opacity: .7; 
+    animation: cloudAnimation2 15s infinite alternate ease-in-out;
+}
+
+
+@keyframes cloudAnimation{
+    from {
+       transform: translate(10%, -10%);
     }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes cloudAnimation2{
+    from {
+        transform: translate(0%, -7%);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+@medio screen and (max-width: 932px){
+    html {
+        font-size: 45%
+    }
+    nav {
+        text-align: center;
+    }
+    #Logo {
+        padding: 2rem;
+    }
+    .cloud{
+        height: 40rem;
+    }
+    .moving-cloud1{
+        z-index: -10;
+    }
+    .moving-cloud2{
+        z-index: -20;
+    }
+    
 }
