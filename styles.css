@@ -15,6 +15,7 @@ a{
     color: lightgray;
 }
 
+
 /* standardized font format */
 /* html{
     font-size: 62.5%;
@@ -43,8 +44,8 @@ h4,h5{
 
 /* header navigation */
 .headerNavigation{
-    background-color: #121c12;
-    color: white;
+    background-color: #01334b;
+    color: #e8e8e8;
     min-height: 7vh;
     display: flex;
     align-items: center;
@@ -182,4 +183,118 @@ h4,h5{
         z-index: -20;
     }
     
+}
+
+
+/* Benefits */
+.benefits-head{
+    background-color: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e8e8e8;
+    text-align: center;
+
+}
+.benefits-head h3{
+    padding: 1rem;
+}
+
+.cards{
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.card{
+    background-color: #01334b;
+    flex: 5 1 13rem;
+    margin: 2rem 2rem;
+    min-height: 15rem;
+    border-radius: 12px;
+    text-align: center;
+    color: #e8e8e8;
+
+}
+.card-icon{
+
+    background-color: #99a8b2;
+    border-radius: 12px 12px 0px 0px;
+}
+.card h4{
+    font-weight: bolder;
+    font-size: large;
+    padding: 1rem;
+}
+.cards img{
+    height: 100px
+}
+/* Particle Background */
+#particles-js{
+    position: absolute;
+    background-color: black;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+}
+
+
+/* Contact */
+#contact{
+    min-height: 100vh;
+    background-image: url('/img/NightCity.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper{
+    background-color: rgba(232,232,232,.8);
+    width: 40%;
+    border-radius: 12px;
+}
+
+.form-head{
+    text-align: center;
+    padding: 1rem;
+}
+.form-head, .form-wrapper{
+    text-align: center;
+    padding: 1rem;
+}
+.name-form, .email-form{
+    margin: .25rem 0rem;
+}
+#contact button{
+   margin-top: .75rem;
+   width: 100%;
+   padding: 1rem;
+   background-color: transparent; 
+   border-radius: 12px;
+   border: none;
+   font-weight: 500;
+   color: rgb(185, 105, 0);
+   outline: none; 
+   border: 2px solid rgb(185, 105, 0);
+}
+
+/* Footer */
+footer{
+    color: #e8e8e8;
+    background-color: rgba(0,0,0,.4);
+}
+footer .footer-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul a{
+    padding: 0rem 1rem;
 }
