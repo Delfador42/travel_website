@@ -50,6 +50,9 @@ h4,h5{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 .headerNavigation nav{
     display: flex;
